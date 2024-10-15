@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #0e0c0c;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+    }
+    
+    header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    header nav ul li {
+        margin-right: 20px;
+    }
+    
+    header nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    header h1{
+        color: #0810f7;
+        text-align: center;
+        margin-right: 50px;
+        font-size: 50px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+    }
+    
+    .btn1 {
+        background-color: #f70909;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .btn2 {
+        background-color: #6409f7;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .btn3 {
+        background-color: #e37e0a;
+        color: hsl(0, 0%, 98%);
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .btn4 {
+        background-color: #0ee419;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: #555;
+    }
+    
+    div {
+        background-color: #f7f7f7;
+        padding: 1em;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        color: #020f07;
+    }
+    
+    div:target {
+        display: block;
+    }
+    
+    h1 {
+        color: #020f07;
+        font-size: medium;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1><center>MY RESUME</center></h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="btn1" onclick="location.href='#personal'">Personal Information</button>
+        <button class="btn2" onclick="location.href='#education'">Education</button>
+        <button class="btn3" onclick="location.href='#skills'">Skills</button>
+        <button class="btn4" onclick="location.href='#projects'">Projects</button>
+        
+        <div id="personal">
+            <h1>Personal Information</h1>
+            <p><b>Name:</b> Gunda Supraja</p>
+            <p><i class="fa-solid fa-envelope" style="color: #ea436d;"></i>: gundasupraja2001@gmail.com</p>
+            <p><i class="fa-solid fa-phone" style="color: #74C0FC;"></i>: 6301048940</p>
+            <p><i class="fa-brands fa-linkedin" style="color: #0810f7;"></i>:supraja-gunda-465719200 </p>
+        </div>
+        
+        <div id="education">
+            <h1>Education</h1>
+            <p><b>Degree: </b> Batchelor's of Technology</p>
+            <p><b>College: </b> CMR Technical Campus</p>
+            <p><b>Branch:</b>  Computer science and engineering and data science</p>
+            <p><b>CGPA: </b>8.0/10.0</p>
+            <p><b>Intermediate</b> </p>
+            <p><b>College: </b> Narayana Junior College</p>
+            <p><b>Percentage: </b> 88.7%</p>
+            <p><b>10th standard</b></p>
+            <p><b>School:</b>St.Martin's High School</p>
+            <p><b>CGPA:</b>8.8 </p>
+        </div>
+        
+        <div id="skills">
+            <h1>Skills</h1>
+            <ul>
+                <li><b>Frontend Technologies:</b> HTML,CSS,JAVASCRIPT</li>
+                <li><b>Backedn Technologies:</b> Python,Java(OOPS),C language</li>
+                <li><b>Databases</b> SQL</li>
+            </ul>
+        </div>
+        <div id="projects">
+            <h1>Projects</h1>
+            <ul>
+                <li><b>Agriculture Crop recommendation based on productivity and season</b>: <br>
+                    <b>Description:</b> - Designed a project which is helpful to farmers and which increases agricultural <br>It depends on three main factors  which are humididty,land and soil
+                </li>
+                <li><b>Personalized Travel Planning System:</b><br>
+                    <b>Description:</b> -Designed and developed an application which gives all the iternary for your trip.<br>It will custoizes your trips according to your comfort.
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+</body>
+</html>
